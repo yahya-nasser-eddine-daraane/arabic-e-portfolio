@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الملف التراكمي الرقمي | المورد الرقمي</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .page-header {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary-color) 0%, #462282 100%);
+      color: white;
+      border-radius: 0 0 24px 24px;
+      margin-bottom: 3rem;
+    }
+    .video-container {
+      position: relative;
+      height: 900px; /* Tall height for Video + Quiz */
+      overflow: hidden;
+      border-radius: var(--border-radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      background: #fdfdfd;
+    }
+    .video-container iframe, .video-container .placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #f0f4f8;
+      color: var(--primary-color);
+    }
+    .video-container .placeholder ion-icon {
+      font-size: 5rem;
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>الملف التراكمي الرقمي</h1>
+    </div>
+    <div class="mobile-toggle" id="mobile-toggle">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">تعرف إلينا</a></li>
+      <li><a href="activities.html">أنشطة التكوين</a></li>
+      <li><a href="resource.html">المورد الرقمي</a></li>
+      <li><a href="scenario.html">السيناريو البيداغوجي</a></li>
+      <li><a href="parallel.html">أنشطة موازية</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero hero-resource animate-fade-in">
+    <h1>المورد الرقمي</h1>
+    <p style="color: var(--accent-color); ">فيديو تفاعلي منجز ببرنام Logiquiz</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="glass-card animate-on-scroll">
+      <h2>فيديو تفاعلي (LogiQuiz)</h2>
+      <p> ومن أجل النهوض بالعملية التعليمية التعلمية بالانتقال من الوسائل التقليدية إلى مسايرة روح العصر الرقمي، تم إنجاز هذا الفيديو التفاعلي للتحسين من جودة التعلمات كما تعزيز التفاعل الإيجابي بين كل من المدرس و المتعلم
+      </p>
+      
+      <div style="margin-top: 2.5rem;">
+        <!-- YouTube Video -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #000;">
+          <iframe src="https://essential-apricot-ft9czhampb.edgeone.app" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video Tutorial"></iframe>
+        </div>
+
+        <!-- Transition Text -->
+        <div style="text-align: center; margin: 2rem 0;">
+          <h3 style="color: var(--secondary-color); font-weight: 700;">أجب عن الأسئلة التالية بعد اطلاعك على محتوى الشريط، اطلاعا كافيا :</h3>
+        </div>
+
+        <!-- La Digitale Quiz -->
+        <div style="position: relative; height: 500px; overflow: hidden; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fdfdfd;">
+          <iframe src="https://ladigitale.dev/digiquiz/q/69bf3aadc3487" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen title="DigiQuiz Interactive Evaluation"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 الملف التراكمي الرقمي. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

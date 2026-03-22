@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الملف التراكمي الرقمي | تعرف إلينا</title>
+  <meta name="description" content="تعرف على منجزي الملف التراكمي">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .creators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .creator-card {
+      text-align: center;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .creator-avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 4rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border: 4px solid white;
+    }
+    .page-header {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary-color) 0%, #462282 100%);
+      color: white;
+      border-radius: 0 0 24px 24px;
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>الملف التراكمي الرقمي</h1>
+    </div>
+    <div class="mobile-toggle" id="mobile-toggle">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">تعرف إلينا</a></li>
+      <li><a href="activities.html">أنشطة التكوين</a></li>
+      <li><a href="resource.html">المورد الرقمي</a></li>
+      <li><a href="scenario.html">السيناريو البيداغوجي</a></li>
+      <li><a href="parallel.html">أنشطة موازية</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero hero-about page-header animate-fade-in">
+    <h1 style="color: var(--accent-color);">تعرف إلينا</h1>
+    <p>بطاقة عبور عن الطالبين المتدربين</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="creators-grid">
+      <div class="glass-card creator-card animate-on-scroll">
+        <div class="creator-avatar" style="overflow: hidden; padding: 0; background: transparent; border: 4px solid white;">
+          <img src="youssef.jpeg" alt="يوسف حمدي" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h2>يوسف حمدي</h2>
+        <p style="text-align: justify; line-height: 1.8;">طالب بالمركز الجهوي لمهن التربية والتكوين بالرباط، المقر الرئيس؛ العرفان، بسلك التعليم الثانوي تأهيلي، مسلك اللغة العربية، حاصل على شهادة الباكالوريا آداب وعلوم إنسانية مسلك الآداب سنة 2022، وخريج المدرسة العليا للأساتذة بمراكش تخصص اللغة العربية سنة 2025، مهتم باللسانيات ونظريات تعليم وتعلم اللغات، والقضايا الديدكتيكية التي من شأنها النهوض بالعملية التعليمية التعلمية.</p>
+      </div>
+
+      <div class="glass-card creator-card animate-on-scroll">
+        <div class="creator-avatar" style="overflow: hidden; padding: 0; background: transparent; border: 4px solid white;">
+          <img src="ayoub.jpeg" alt="أيوب ناجي" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h2>أيوب ناجي</h2>
+        <p style="text-align: justify; line-height: 1.8;">حاصل على شهادة الإجازة في التربية، تخصص اللغة العربية تعليم ثانوي سنة 2025، خريج المدرسة العليا للأساتذة مراكش، حاصل على شهادة الباكلوريا مسلك الآداب والعلوم الإنسانية بميزة حسن لسنة 2022، مهتم بالدراسات اللغوية والأدبية وقضايا التربية والتكوين، يتابع دراسته بالمركز الجهوي لمهن التربية والتكوين لجهة الرباط سلا القنيطرة، المقر الرئيس العرفان، للموسم الدراسي 2026/2025، مسلك تأهيل أطر التدريس، سلك التعليم الثانوي التأهيلي.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 الملف التراكمي الرقمي. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
